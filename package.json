@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --open",
     "build": "vite build --base=/STP-12570/",
     "preview": "vite preview",
     "build:preview": "vite build && vite preview"
