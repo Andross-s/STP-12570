@@ -1,11 +1,20 @@
 const openBtnEl = document.querySelector('[data-action="open"]');
 const closeBtnEl = document.querySelector('[data-action="close"]');
 const burgerMenuEl = document.querySelector('[data-visible]');
+const burgerMenuLinks = document.querySelectorAll('.header-menu-link');
 
-openBtnEl.addEventListener('click', e => {
-  burgerMenuEl.dataset.visible = 'open';
-});
+if (openBtnEl && closeBtnEl && burgerMenuEl) {
+  openBtnEl.addEventListener('click', () => {
+    burgerMenuEl.dataset.visible = 'open';
+  });
 
-closeBtnEl.addEventListener('click', e => {
-  burgerMenuEl.dataset.visible = 'close';
-});
+  closeBtnEl.addEventListener('click', () => {
+    burgerMenuEl.dataset.visible = 'close';
+  });
+
+  burgerMenuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      burgerMenuEl.dataset.visible = 'close';
+    });
+  });
+}
