@@ -4,6 +4,7 @@
   min-width: 320px;
   width: 100%;
   background: var(--black);
+  margin: 0 auto;
 }
 
 .footer-container {
@@ -66,6 +67,7 @@
 
 @media screen and (min-width: 1200px) {
   .footer {
+    max-width: 1440px;
     min-height: 100%;
     padding: 16px 112px;
   }
