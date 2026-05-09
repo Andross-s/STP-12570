@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/STP-12570/favicon.svg" />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     <link rel="preconnect" href="https://googleapis.com" />
@@ -12,16 +12,34 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/STP-12570/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-12570/assets/styles-CaSafOfd.css">
+    <link rel="stylesheet" crossorigin href="/STP-12570/assets/styles-DZAsUmoT.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
+  <div class="header-container">
     <div class="header-wrapper">
-       <a class="header-logo" href="./index.html" aria-label="Site logo">
-          <img src="/STP-12570/assets/favicon-BnlRC5mX.png" alt="Logo" width="44" height="44" />
-        </a>
-      <nav class="header-nav">
+      <a class="header-logo" href="./index.html" aria-label="Site logo">
+        <img src="/STP-12570/assets/header-logo-C2a6VUWL.png" alt="Logo" width="44" height="44" />
+      </a>
+      <nav class="header-nav" aria-label="Main navigation" data-visible="close">
+        <div class="burger-menu-top">
+          <button
+            class="burger-menu-close"
+            type="button"
+            aria-label="Close menu"
+            data-action="close"
+          >
+            <svg
+              class="burger-close-icon"
+              width="20"
+              height="20"
+              aria-hidden="true"
+            >
+              <use href="/STP-12570/assets/sprite-BGKrtZQY.svg#icon-x"></use>
+            </svg>
+          </button>
+        </div>
+
         <ul class="header-menu">
           <li class="header-menu-item">
             <a class="header-menu-link" href="#about">About the Game</a>
@@ -49,28 +67,25 @@
           </li>
         </ul>
       </nav>
-       </div>
-
-      <button
-        class="header-btn"
-        type="button"
-        aria-label="Open menu"
-        data-burger-open
-      >
-        <svg class="burger-icon" width="44" height="44" aria-hidden="true">
-          <use href="/STP-12570/assets/sprite-Ch15-1o_.svg#icon-burger"></use>
-        </svg>
-      </button>
-
-    
-     
     </div>
+
+    <button
+      class="header-btn"
+      type="button"
+      aria-label="Open menu"
+      data-action="open"
+    >
+      <svg class="burger-icon" width="44" height="44" aria-hidden="true">
+        <use href="/STP-12570/assets/sprite-BGKrtZQY.svg#icon-burger"></use>
+      </svg>
+    </button>
   </div>
 </header>
 
+
     <main>
       <!-- Loads the specified .html file -->
-      <section class="contact">
+      <section class="contact" id="contact">
   <div class="contact-container">
     <div class="contact-header">
       <h1 class="contact-title">Contact</h1>
