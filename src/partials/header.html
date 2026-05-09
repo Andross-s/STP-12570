@@ -1,33 +1,52 @@
 <header class="header">
   <div class="container">
-    <div class="wrapper">
-      <nav class="nav">
-        <a class="nav-logo" href="./index.html" aria-label="Site logo">
-          <svg class="nav-logo-icon" width="100" height="30">
-            <use href="{=$icon-path}"></use>
-          </svg>
+    <div class="header-wrapper">
+       <a class="header-logo" href="./index.html" aria-label="Site logo">
+          <img src="../img/favicon.png" alt="Logo" width="44" height="44" />
         </a>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+      <nav class="header-nav">
+        <ul class="header-menu">
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#about">About the Game</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#play">How to Play</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#features">Features</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#started">Get Started Now</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#reviews">Player Reviews</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#faq">FAQ</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
-      <div class="header__burger-wrapper">
-        <button type="button" class="burger-btn" data-action="open">Open menu</button>
-        <div class="burger-menu" data-visible="close">
-          <ul>
-            <li><a href="#">link-1</a></li>
-            <li><a href="#">link-2</a></li>
-            <li><a href="#">link-3</a></li>
-            <li><a href="#">link-4</a></li>
-          </ul>
-          <button type="button" class="btn-close" data-action="close">close</button>
-        </div>
-      </div>
+       </div>
+
+      <button
+        class="header-btn"
+        type="button"
+        aria-label="Відкрити меню"
+        data-burger-open
+      >
+        <svg class="burger-icon" width="44" height="44" aria-hidden="true">
+          <use href="../img/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
+
+    
+     
     </div>
   </div>
 </header>
