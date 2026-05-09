@@ -40,7 +40,7 @@
   flex-shrink: 0;
   width: 27px;
   height: 20px;
-  color: var(--black);
+  color: var(--medium-grey);
 }
 
 .header-page__text {
