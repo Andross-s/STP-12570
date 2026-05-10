@@ -2,6 +2,10 @@
   min-width: 375px;
   padding: 56px 16px;
 }
+
+.hero-left {
+  margin-bottom: 32px;
+}
 .hero-text-up {
   font-size: 12px;
   line-height: 1.1;
@@ -32,6 +36,8 @@
 .hero-img {
   width: 343px;
   height: 181px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px 0 #00e2f6;
 }
 @media (min-width: 1200px) {
   .hero-img {
@@ -71,12 +77,17 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .hero {
+    padding: 230px 112px;
+  }
+
   .hero-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
   .hero-left {
+    margin-bottom: 0;
     flex: 1;
     /* display: flex;
     flex-direction: column;
