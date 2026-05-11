@@ -1,6 +1,7 @@
 .faq {
   min-width: 320px;
   width: 100%;
+  scroll-margin-top: 61px;
   background-color: var(--white);
   color: var(--light-black);
 }
@@ -54,6 +55,18 @@
   cursor: pointer;
 }
 
+.faq-question:hover {
+  box-shadow: 0 0 20px 0 var(--pink);
+}
+
+.faq-question:focus {
+  border: 1px solid var(--bright-blue);
+}
+
+.faq-question:active {
+  width: 576px;
+}
+
 .faq-icon {
   position: relative;
   display: flex;
@@ -68,6 +81,7 @@
 .faq-icon-plus {
   position: absolute;
   color: var(--white);
+  fill: var(--white);
   transition: opacity 200ms ease;
 }
 
@@ -114,6 +128,10 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .faq {
+    scroll-margin-top: 66px;
+  }
+
   .faq-label {
     font-size: 24px;
     margin-bottom: 40px;

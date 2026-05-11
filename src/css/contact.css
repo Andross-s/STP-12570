@@ -5,6 +5,7 @@
   background-size: cover;
   background-position: center;
   margin: 0 auto;
+  scroll-margin-top: 61px;
 }
 
 .contact-container {
@@ -51,6 +52,7 @@
   .contact {
     background-image: url('../img/contact/contact-img-desktop.png');
     max-width: 1440px;
+    scroll-margin-top: 66px;
   }
 
   .contact-container {

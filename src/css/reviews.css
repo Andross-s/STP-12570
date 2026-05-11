@@ -1,0 +1,139 @@
+.reviews {
+  min-width: 320px;
+  width: 100%;
+  scroll-margin-top: 61px;
+  overflow: hidden;
+  background-color: var(--dark-violet);
+  color: var(--white);
+}
+
+.reviews .container {
+  overflow: hidden;
+}
+
+.reviews-h2 {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--light-grey);
+}
+
+.reviews-swiper {
+  width: 100%;
+  overflow: visible;
+}
+
+.reviews-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+.reviews-swiper .swiper-slide {
+  width: 253px;
+  height: auto;
+}
+
+.block {
+  width: 253px;
+  height: 119px;
+  padding: 16px 8px;
+  border-radius: 16px;
+  background-color: var(--white);
+  color: var(--black);
+  box-shadow: 0 0 20px 0 var(--pink);
+}
+
+.block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.reviews-swiper .swiper-slide:nth-child(even) .block {
+  box-shadow: 0 0 20px 0 var(--bright-blue);
+}
+
+.players {
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--black);
+}
+
+.block-stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.star,
+.star-empty {
+  width: 16px;
+  height: 16px;
+}
+
+.star {
+  fill: var(--yellow);
+}
+
+.star-empty {
+  stroke-width: 1px;
+  stroke: var(--grey);
+}
+
+.players-comment {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0em;
+  color: var(--black);
+}
+
+@media only screen and (min-width: 1200px) {
+  .reviews {
+    scroll-margin-top: 66px;
+  }
+
+  .reviews-h2 {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 110%;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    color: var(--light-grey);
+  }
+
+  .block {
+    padding: 24px 16px;
+    width: 389px;
+    height: 214px;
+  }
+
+  .reviews-swiper .swiper-slide {
+    width: 389px;
+  }
+
+  .block-header {
+    margin-bottom: 16px;
+  }
+
+  .players {
+    font-size: 24px;
+  }
+
+  .star,
+  .star-empty {
+    width: 24px;
+    height: 24px;
+  }
+
+  .players-comment {
+    font-size: 28px;
+  }
+}
