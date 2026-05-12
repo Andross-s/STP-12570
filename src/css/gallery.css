@@ -4,6 +4,7 @@
   scroll-margin-top: 61px;
   background: var(--white);
   color: var(--light-black);
+  margin: 0 auto;
 }
 
 .gallery-header {
@@ -76,7 +77,7 @@
   border-radius: 8px;
   background-color: var(--white);
   color: var(--light-black);
-  box-shadow: 0 0 10px 0 rgba(10, 5, 20, 0.25);
+  box-shadow: 0 0 10px 0 rgba(10, 5, 20, 0.2);
   cursor: pointer;
   transition:
     border-color 200ms ease,
@@ -91,13 +92,13 @@
 
 .gallery-button:active:not(:disabled) {
   background-color: var(--light-grey);
-  box-shadow: 0 0 10px 0 rgba(10, 5, 20, 0.25);
+  box-shadow: 0 0 10px 0 rgba(10, 5, 20, 0.2);
 }
 
 .gallery-button:focus-visible {
   border-color: var(--bright-blue);
   outline: 0;
-  box-shadow: 0 0 0 2px rgba(43, 29, 248, 0.2);
+  box-shadow: 0 0 20px 0 rgba(10, 5, 20, 0.3);
 }
 
 .gallery-button:disabled,
@@ -117,6 +118,10 @@
 .gallery-button svg path,
 .gallery-button use {
   fill: currentColor;
+}
+
+.swiper {
+  overflow-x: visible;
 }
 
 @media only screen and (min-width: 1200px) {

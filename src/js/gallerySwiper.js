@@ -17,7 +17,7 @@ if (gallerySwiperElement) {
     },
     breakpoints: {
       1200: {
-        spaceBetween: 20,
+        spaceBetween: 24,
       },
     },
   });
