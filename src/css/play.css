@@ -85,9 +85,13 @@
 @media only screen and (min-width: 1200px) {
   .play {
     scroll-margin-top: 66px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
   }
   .play-content-cover {
     max-width: 1440px;
+    width: 100%;
   }
   .play-title {
     max-width: 1440px;

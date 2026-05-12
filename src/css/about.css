@@ -54,6 +54,9 @@
 @media only screen and (min-width: 1200px) {
   .about {
     scroll-margin-top: 66px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
   }
   .about-label {
     font-size: 24px;

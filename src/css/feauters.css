@@ -65,6 +65,9 @@
 @media only screen and (min-width: 1200px) {
   .features {
     scroll-margin-top: 66px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
   }
   .features-label {
     font-size: 24px;
