@@ -18,7 +18,7 @@
   font-size: 28px;
   line-height: 1.1;
   color: #060606;
-  max-width: 343px;
+  /* max-width: 343px; */
   width: 100%;
   margin-bottom: 32px;
   margin: 0 auto;
@@ -28,13 +28,15 @@
   border-radius: 16px;
   padding-top: 16px;
   padding-bottom: 16px;
-  max-width: 343px;
+  /* max-width: 343px; */
   width: 100%;
   box-shadow: 0 0 20px 0 rgba(10, 5, 20, 0.3);
   background: #0a0514;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 8px 0;
   padding: 10.5px 16px;
 }
