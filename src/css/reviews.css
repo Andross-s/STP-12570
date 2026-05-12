@@ -41,10 +41,11 @@
   border-radius: 16px;
   background-color: var(--white);
   color: var(--black);
-  box-shadow: 0 0 20px 0 var(--pink);
+  box-shadow: 0 0 20px var(--pink);
 }
 
 .block-header {
+  max-height: 26px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,7 +53,7 @@
 }
 
 .reviews-swiper .swiper-slide:nth-child(even) .block {
-  box-shadow: 0 0 20px 0 var(--bright-blue);
+  box-shadow: 0 0 20px #00e2f6;
 }
 
 .players {
@@ -63,25 +64,25 @@
   letter-spacing: 0em;
   text-align: center;
   color: var(--black);
+  padding-bottom: 2px;
 }
 
 .block-stars {
   display: flex;
   align-items: center;
-  gap: 2px;
-}
-
-.star,
-.star-empty {
-  width: 16px;
-  height: 16px;
+  gap: 4px;
 }
 
 .star {
+  width: 16px;
+  height: 16px;
   fill: var(--yellow);
 }
 
 .star-empty {
+  width: 12px;
+  height: 12px;
+  fill: var(--grey);
   stroke-width: 1px;
   stroke: var(--grey);
 }
@@ -125,15 +126,21 @@
 
   .players {
     font-size: 24px;
+    line-height: 110%;
   }
 
-  .star,
-  .star-empty {
+  .star {
     width: 24px;
     height: 24px;
   }
 
+  .star-empty {
+    width: 16px;
+    height: 16px;
+  }
+
   .players-comment {
     font-size: 28px;
+    line-height: 110%;
   }
 }
