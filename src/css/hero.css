@@ -1,5 +1,8 @@
 .hero {
   min-width: 320px;
+  margin: 0 auto;
+}
+.hero-container {
   max-width: 375px;
   padding: 56px 16px;
   margin: 0 auto;
@@ -87,19 +90,19 @@
   }
 
   .hero {
-    padding: 230px 112px;
     max-width: 1440px;
     width: 100%;
   }
 
   .hero-container {
+    padding: 223px 112px;
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
   .hero-left {
     flex: 1;
-    /* min-width: 0; */
     margin-bottom: 0;
     max-width: 596px;
     height: 316px;
@@ -121,5 +124,7 @@
   .box {
     margin-left: 0;
     margin-top: 0;
+    width: 216px;
+    height: 64px;
   }
 }

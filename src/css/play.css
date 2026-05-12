@@ -1,4 +1,10 @@
-.play-container {
+.play {
+  scroll-margin-top: 61px;
+  min-width: 320px;
+  width: 100%;
+}
+
+.play-content-cover {
   max-width: 375px;
   width: 100%;
   margin: 0 auto;
@@ -11,6 +17,9 @@
   margin-bottom: 24px;
 }
 .play-title {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
   font-family: 'Russo One', sans-serif;
   font-weight: 400;
   font-size: 28px;
@@ -74,8 +83,15 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .play-container {
+  .play {
+    scroll-margin-top: 66px;
+  }
+  .play-content-cover {
     max-width: 1440px;
+  }
+  .play-title {
+    max-width: 1440px;
+    margin-bottom: 32px;
   }
   .play-label {
     font-size: 24px;

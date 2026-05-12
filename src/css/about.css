@@ -2,6 +2,7 @@
   min-width: 320px;
   width: 100%;
   background-color: #fdfdfd;
+  scroll-margin-top: 61px;
 }
 
 .about-label {
@@ -51,6 +52,9 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .about {
+    scroll-margin-top: 66px;
+  }
   .about-label {
     font-size: 24px;
     line-height: 1.1;
