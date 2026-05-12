@@ -4,6 +4,7 @@
   scroll-margin-top: 61px;
   background-color: var(--white);
   color: var(--light-black);
+  margin: 0 auto;
 }
 
 .faq-label {
@@ -131,6 +132,7 @@
 
 @media only screen and (min-width: 1200px) {
   .faq {
+    max-width: 1440px;
     scroll-margin-top: 66px;
   }
 
