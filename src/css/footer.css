@@ -3,6 +3,7 @@
   padding: 16px;
   min-width: 320px;
   width: 100%;
+  max-width: 375px;
   background: var(--black);
   margin: 0 auto;
 }

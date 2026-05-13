@@ -8,8 +8,10 @@
 .privacy-policy {
   min-width: 320px;
   width: 100%;
+  max-width: 375px;
   padding: 32px 16px;
   background-color: #090412;
+  margin: 0 auto;
 }
 
 .privacy-policy h1 {

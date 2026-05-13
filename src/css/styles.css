@@ -8,7 +8,6 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
-@import url('./animations.css');
 
 /* Sections style */
 @import url('./header.css');
@@ -17,9 +16,6 @@
 @import url('./play.css');
 @import url('./feauters.css');
 @import url('./started.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
 @import url('./gallery.css');
 @import url('./reviews.css');
 @import url('./faq.css');
