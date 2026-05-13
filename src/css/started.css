@@ -84,6 +84,7 @@
   .started-content {
     max-width: 620px;
     width: 100%;
+    align-items: start;
   }
   .started-box {
     max-width: 216px;
@@ -93,5 +94,6 @@
   .started-wrap {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
   }
 }

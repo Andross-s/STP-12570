@@ -48,6 +48,7 @@
 
 .features-img {
   filter: drop-shadow(0 0 20px #00e2f6);
+  max-width: 64px;
 }
 
 .features-subtitle {
@@ -89,6 +90,8 @@
   .features-subtitle {
     font-size: 32px;
     line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 8px;
   }
   .features-content {
     font-size: 24px;
@@ -96,11 +99,14 @@
   }
   .features-item {
     gap: 16px 4px;
-    align-items: center;
+    /* align-items: center; */
+
     justify-content: center;
     padding: 32px 16px;
   }
   .features-list {
+    max-width: 290px;
+    height: 159px;
     width: calc((100% - 4px * 3) / 4);
   }
 }
