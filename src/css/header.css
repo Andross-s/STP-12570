@@ -115,6 +115,9 @@
   align-items: flex-end;
 }
 @media screen and (min-width: 1200px) {
+  .burger-container {
+    all: unset;
+  }
   .header-container {
     gap: 32px;
     max-width: 1440px;
