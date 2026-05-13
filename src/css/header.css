@@ -109,7 +109,6 @@
   .header-container {
     gap: 32px;
     max-width: 1440px;
-    height: 64px;
     padding: 10px 112px;
   }
 
@@ -172,10 +171,12 @@
   .header-menu-link:hover {
     text-decoration: underline;
     text-decoration-color: var(--pink);
+    text-decoration-thickness: 2px;
   }
 
   .header-menu-link:active {
     text-decoration-color: var(--dark-blue);
+    text-decoration-thickness: 2px;
   }
 
   .header-menu-link:focus {
