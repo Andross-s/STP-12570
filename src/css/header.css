@@ -105,7 +105,15 @@
   line-height: 130%;
   letter-spacing: 0em;
 }
-
+.burger-container {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 @media screen and (min-width: 1200px) {
   .header-container {
     gap: 32px;
