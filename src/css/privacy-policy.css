@@ -2,7 +2,6 @@
   min-width: 320px;
   width: 100%;
   margin: 0 auto;
-  max-width: 1440px;
 }
 
 .privacy-policy {
@@ -65,11 +64,12 @@
 
 @media only screen and (min-width: 1200px) {
   .privacy-policy {
+    max-width: 1440px;
     padding: 56px 112px;
   }
 
-  .privacy-policy::before {
-    height: 4px;
+  .privacy-policy-page {
+    max-width: 1440px;
   }
 
   .privacy-policy h1 {
