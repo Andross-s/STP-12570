@@ -82,6 +82,8 @@
 
 .faq-icon-left,
 .faq-icon-plus {
+  width: 21px;
+  height: 21px;
   position: absolute;
   color: var(--white);
   fill: var(--white);
@@ -90,14 +92,10 @@
 
 .faq-icon-left {
   opacity: 1;
-  width: 21px;
-  height: 21px;
 }
 
 .faq-icon-plus {
   opacity: 0;
-  width: 21px;
-  height: 21px;
 }
 
 .faq-question[aria-expanded='true'] .faq-icon-left {
@@ -165,15 +163,11 @@
     height: 44px;
   }
 
-  .faq-icon-left .faq-icon-plus {
+  .faq-icon-left,
+  .faq-icon-plus {
     width: 26px;
     height: 26px;
   }
-
-  /* .faq-icon-plus {
-    width: 26px;
-    height: 26px;
-  } */
 
   .faq-answer {
     margin-top: 0;
