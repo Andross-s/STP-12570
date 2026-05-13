@@ -1,6 +1,7 @@
 .contact {
   min-width: 320px;
   width: 100%;
+  max-width: 375px;
   background-image: url('../img/contact/contact-img-mobile.png');
   background-size: cover;
   background-position: center;

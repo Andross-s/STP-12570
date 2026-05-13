@@ -4,6 +4,7 @@
   justify-content: space-between;
   min-width: 320px;
   width: 100%;
+  max-width: 375px;
   margin: 0 auto;
   padding: 8px 16px;
 }

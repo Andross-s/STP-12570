@@ -1,13 +1,15 @@
 .terms {
   min-width: 320px;
   width: 100%;
-  max-width: 1440px;
+
   margin: 0 auto;
 }
 
 .terms-page {
+  max-width: 375px;
   padding: 32px 16px;
   background-color: #090412;
+  margin: 0 auto;
 }
 
 .terms-page h1 {
@@ -42,6 +44,7 @@
 
 @media only screen and (min-width: 1200px) {
   .terms-page {
+    max-width: 1440px;
     padding: 56px 112px;
   }
 
