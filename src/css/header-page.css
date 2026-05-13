@@ -11,7 +11,6 @@
 .header-page__container {
   display: flex;
   justify-content: space-between;
-
   align-items: center;
   min-width: 320px;
   width: 100%;
@@ -52,6 +51,12 @@
   letter-spacing: 0em;
   text-transform: capitalize;
   color: var(--medium-grey);
+}
+
+.header-page__text:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--pink);
+  text-decoration-thickness: 2px;
 }
 
 .header-page__back-link:hover,
