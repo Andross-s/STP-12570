@@ -2,9 +2,9 @@
   min-width: 320px;
   width: 100%;
   max-width: 375px;
-  background-image: url('../img/contact/contact-img-mobile.png');
-  background-size: cover;
-  background-position: center;
+  /* background-image: url('../img/contact/contact-img-mobile.png'); */
+  /* background-size: cover;
+  background-position: center; */
   margin: 0 auto;
   scroll-margin-top: 61px;
 }
@@ -14,6 +14,13 @@
   flex-direction: column;
   padding: 32px 0px 32px 16px;
   margin: 0 auto;
+  background-image: image-set(
+    url('../img/contact/contact-img-mobile1x.png') 1x,
+    url('../img/contact/contact-img-mobile2x.png') 2x
+  );
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: calc(50% + 165px) center;
 }
 
 .contact-header {
@@ -51,13 +58,17 @@
 
 @media screen and (min-width: 1200px) {
   .contact {
-    background-image: url('../img/contact/contact-img-desktop.png');
     max-width: 1440px;
     scroll-margin-top: 66px;
   }
 
   .contact-container {
     padding: 56px 112px;
+    background-image: image-set(
+      url('../img/contact/contact-img-desktop1x.png') 1x,
+      url('../img/contact/contact-img-desktop2x.png') 2x
+    );
+    background-position: right;
   }
 
   .contact-header {
