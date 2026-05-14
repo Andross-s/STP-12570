@@ -1,15 +1,19 @@
-const faqQuestions = document.querySelectorAll('.faq-question');
+const faqQuestions = document.querySelectorAll('[data-faq-question]');
 
 faqQuestions.forEach(question => {
   question.addEventListener('click', () => {
-    const item = question.closest('.faq-item');
+    const item = question.closest('[data-faq-item]');
     const isOpen = question.getAttribute('aria-expanded') === 'true';
 
     if (!item) {
       return;
     }
 
-    item.classList.toggle('is-open', !isOpen);
+    if (!isOpen) {
+      item.setAttribute('data-open', '');
+    } else {
+      item.removeAttribute('data-open');
+    }
     question.setAttribute('aria-expanded', String(!isOpen));
   });
 });

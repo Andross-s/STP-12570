@@ -2,7 +2,7 @@ import Swiper from 'swiper';
 import { Mousewheel } from 'swiper/modules';
 import 'swiper/css';
 
-const reviewsSwiperElement = document.querySelector('.reviews-swiper');
+const reviewsSwiperElement = document.getElementById('reviews-swiper');
 
 if (reviewsSwiperElement) {
   const desktopMediaQuery = window.matchMedia('(min-width: 1200px)');
