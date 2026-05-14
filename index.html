@@ -14,7 +14,7 @@
     <script type="module" crossorigin src="/STP-12570/index.js"></script>
     <link rel="modulepreload" crossorigin href="/STP-12570/assets/vendor-BidNey_Y.js">
     <link rel="stylesheet" crossorigin href="/STP-12570/assets/vendor-CtIR5pHR.css">
-    <link rel="stylesheet" crossorigin href="/STP-12570/assets/styles-t2azmGZS.css">
+    <link rel="stylesheet" crossorigin href="/STP-12570/assets/styles-BNer4Shc.css">
   </head>
   <body>
     <header class="header">
@@ -43,33 +43,32 @@
             </button>
           </div>
 
-          <ul class="header-menu">
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="#about">About the Game</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="#play">How to Play</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="#features">Features</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="#started">Get Started Now</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="#gallery">Gallery</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="#reviews">Player Reviews</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="#faq">FAQ</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="header-menu">
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#about" data-menu-link>About the Game</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#play" data-menu-link>How to Play</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#features" data-menu-link>Features</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#started" data-menu-link>Get Started Now</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#gallery" data-menu-link>Gallery</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#reviews" data-menu-link>Player Reviews</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#faq" data-menu-link>FAQ</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#contact" data-menu-link>Contact</a>
+          </li>
+        </ul>
       </nav>
     </div>
 
@@ -407,12 +406,12 @@
 </section>
 
       <section class="gallery" id="gallery">
-  <div class="container">
+  <div class="gallery-container container">
     <div class="gallery-header">
       <h2 class="gallery-title">Gallery</h2>
       <h3 class="gallery-subtitle">Strategy in action</h3>
     </div>
-    <div class="swiper gallery-swiper">
+    <div class="swiper gallery-swiper" id="gallery-swiper" data-gallery-swiper>
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <picture>
@@ -501,12 +500,22 @@
         </div>
       </div>
       <div class="gallery-navigation">
-        <button class="gallery-button gallery-button-prev" type="button" aria-label="Previous gallery slide">
+        <button
+          class="gallery-button gallery-button-prev"
+          data-gallery-button-prev
+          type="button"
+          aria-label="Previous gallery slide"
+        >
           <svg class="svg-icon-prev" width="14" height="29">
             <use href="./icons/sprite.svg#button-prev"></use>
           </svg>
         </button>
-        <button class="gallery-button gallery-button-next" type="button" aria-label="Next gallery slide">
+        <button
+          class="gallery-button gallery-button-next"
+          data-gallery-button-next
+          type="button"
+          aria-label="Next gallery slide"
+        >
           <svg class="svg-icon-next" width="14" height="29">
             <use href="./icons/sprite.svg#button-next"></use>
           </svg>
@@ -519,7 +528,7 @@
       <section class="reviews" id="reviews">
   <div class="container">
     <h2 class="reviews-h2">Player Reviews</h2>
-    <div class="swiper reviews-swiper">
+    <div class="swiper reviews-swiper" id="reviews-swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide first">
           <div class="block">
@@ -728,9 +737,10 @@
     <div class="faq-content">
       <h2 class="faq-title">Quick answers</h2>
       <ul class="faq-list">
-        <li class="faq-item">
+        <li class="faq-item" data-faq-item>
           <button
             class="faq-question"
+            data-faq-question
             type="button"
             aria-expanded="false"
             aria-controls="faq-answer-1"
@@ -750,9 +760,10 @@
             towers.
           </p>
         </li>
-        <li class="faq-item">
+        <li class="faq-item" data-faq-item>
           <button
             class="faq-question"
+            data-faq-question
             type="button"
             aria-expanded="false"
             aria-controls="faq-answer-2"
@@ -771,9 +782,10 @@
             Yes. New types appear as you progress.
           </p>
         </li>
-        <li class="faq-item">
+        <li class="faq-item" data-faq-item>
           <button
             class="faq-question"
+            data-faq-question
             type="button"
             aria-expanded="false"
             aria-controls="faq-answer-3"
@@ -792,9 +804,10 @@
             Yes. They are essential for survival.
           </p>
         </li>
-        <li class="faq-item">
+        <li class="faq-item" data-faq-item>
           <button
             class="faq-question"
+            data-faq-question
             type="button"
             aria-expanded="false"
             aria-controls="faq-answer-4"
@@ -813,9 +826,10 @@
             Yes. To improve your strategy.
           </p>
         </li>
-        <li class="faq-item">
+        <li class="faq-item" data-faq-item>
           <button
             class="faq-question"
+            data-faq-question
             type="button"
             aria-expanded="false"
             aria-controls="faq-answer-5"
