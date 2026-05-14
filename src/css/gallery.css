@@ -5,6 +5,10 @@
   background: var(--white);
   color: var(--light-black);
   margin: 0 auto;
+  /* overflow: hidden; */
+}
+
+.gallery-container {
   overflow: hidden;
 }
 

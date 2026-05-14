@@ -1,10 +1,10 @@
 <section class="gallery" id="gallery">
-  <div class="container">
+  <div class="gallery-container container">
     <div class="gallery-header">
       <h2 class="gallery-title">Gallery</h2>
       <h3 class="gallery-subtitle">Strategy in action</h3>
     </div>
-    <div class="swiper gallery-swiper">
+    <div class="swiper gallery-swiper" id="gallery-swiper" data-gallery-swiper>
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <picture>
@@ -108,12 +108,22 @@
         </div>
       </div>
       <div class="gallery-navigation">
-        <button class="gallery-button gallery-button-prev" type="button" aria-label="Previous gallery slide">
+        <button
+          class="gallery-button gallery-button-prev"
+          data-gallery-button-prev
+          type="button"
+          aria-label="Previous gallery slide"
+        >
           <svg class="svg-icon-prev" width="14" height="29">
             <use href="./icons/sprite.svg#button-prev"></use>
           </svg>
         </button>
-        <button class="gallery-button gallery-button-next" type="button" aria-label="Next gallery slide">
+        <button
+          class="gallery-button gallery-button-next"
+          data-gallery-button-next
+          type="button"
+          aria-label="Next gallery slide"
+        >
           <svg class="svg-icon-next" width="14" height="29">
             <use href="./icons/sprite.svg#button-next"></use>
           </svg>

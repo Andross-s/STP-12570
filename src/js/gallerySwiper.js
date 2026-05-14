@@ -2,18 +2,18 @@ import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 
-const gallerySwiperElement = document.querySelector('.gallery-swiper');
+const gallerySwiperElement = document.getElementById('gallery-swiper');
 
 if (gallerySwiperElement) {
   new Swiper(gallerySwiperElement, {
     modules: [Navigation],
     slidesPerView: 'auto',
-    spaceBetween: 16,
+    spaceBetween: 24,
     grabCursor: true,
     navigation: {
-      prevEl: '.gallery-button-prev',
-      nextEl: '.gallery-button-next',
-      disabledClass: 'is-disabled',
+      prevEl: '[data-gallery-button-prev]',
+      nextEl: '[data-gallery-button-next]',
+      disabledClass: 'is-swiper-navigation-disabled',
     },
     breakpoints: {
       1200: {
